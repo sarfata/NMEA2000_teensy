@@ -4,24 +4,11 @@ This library provides a Teensy driver for the NMEA2000 library.
 
 See https://github.com/ttlappalainen/NMEA2000.
 
-## Hardware
-
-This only works with Teensy 3.1/3.2.
-
-You will need a CAN transceiver like the MCP2551. 
-
-    Teensy                  MCP2551           NMEA2000 Cable
-
-    TX               ->     TxD
-    RX               ->     RxD
-                            CANH                Blue
-                            CANL                White
-    Gnd                     Gnd                 Gnd
-    Vin (5v when usb)       VDD
-    Gnd                     Rs 
-                            Vref (disconnected)
 
 ## Usage
+
+This library requires the [FlexCAN](https://github.com/teachop/FlexCAN_Library). Make sure you have it installed.
+
 
     #include <NMEA2000.h>
     #include <N2kMessages.h>
@@ -37,6 +24,23 @@ You will need a CAN transceiver like the MCP2551.
     }
 
 See the [NMEA2000](https://github.com/ttlappalainen/NMEA2000) for more examples. They are all compatible with this library.
+
+## Hardware
+
+This driver only works with Teensy 3.1/3.2.
+
+You will need a CAN transceiver like the MCP2551 (for a list of other tested CAN controllers, refer to the [FlexCAN library README](https://github.com/teachop/FlexCAN_Library).
+
+|      Teensy       |       MCP2551       | NMEA2000 Cable |
+| ----------------- | ------------------- | -------------- |
+|        TX         |         TxD         |                |
+|        RX         |         RxD         |                |
+|                   |        CANH         |      Blue      |
+|                   |        CANL         |     White      |
+|        Gnd        |         Gnd         |     Black      |
+| Vin (5v when usb) |         VDD         |                |
+|        Gnd        |         Rs          |                |
+|                   | Vref (disconnected) |                |
 
 ## License
 
