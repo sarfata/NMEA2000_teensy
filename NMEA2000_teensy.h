@@ -36,12 +36,13 @@ class tNMEA2000_teensy : public tNMEA2000
 {
 protected:
   FlexCAN *CANbus;
+  uint16_t DefTimeOut; 
   bool CANSendFrame(unsigned long id, unsigned char len, const unsigned char *buf, bool wait_sent);
   bool CANOpen();
   bool CANGetFrame(unsigned long &id, unsigned char &len, unsigned char *buf);
   
 public:
-  tNMEA2000_teensy();
+  tNMEA2000_teensy(uint16_t _DefTimeOut=2);
 };
 
 #endif

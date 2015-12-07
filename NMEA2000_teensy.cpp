@@ -30,8 +30,9 @@ Requires FlexCAN library.
 #include <kinetis_flexcan.h>
 
 //*****************************************************************************
-tNMEA2000_teensy::tNMEA2000_teensy() : tNMEA2000() {
+tNMEA2000_teensy::tNMEA2000_teensy(uint16_t _DefTimeOut) : tNMEA2000() {
   CANbus = new FlexCAN(250000);
+  DefTimeOut=_DefTimeOut;
 }
 
 //*****************************************************************************
@@ -40,6 +41,7 @@ bool tNMEA2000_teensy::CANSendFrame(unsigned long id, unsigned char len, const u
   out.id = id;
   out.ext = 1;
   out.len = len;
+  out.timeout = (wait_sent?DefTimeOut:0);
   
   for (int i=1; i<len && i<8; i++) out.buf[i] = buf[i];
 
