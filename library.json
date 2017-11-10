@@ -17,5 +17,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "frameworks": "*",
-  "platforms": "*"
+  "platforms": "Teensy"
 }
+"dependencies":
+[
+    {
+        "name": "NMEA2000-library",
+        "authors": "Timo Lappalainen",
+        "url": "Kave Oy <www.kave.fi>",
+        "maintainer": true
+    }
+ ]
