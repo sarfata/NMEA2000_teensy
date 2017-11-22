@@ -1,5 +1,5 @@
 {
-  "name": "NMEA2000_Teensy",
+  "name": "NMEA2000-Teensy",
   "keywords": "nmea 2000, nmea, 2000, communication, bus, boat, marine",
   "description": "A driver for the NMEA2000 Arduino library and the teensy 3.x boards",
   "repository":
@@ -17,14 +17,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "frameworks": "*",
-  "platforms": "Teensy"
+  "platforms": "Teensy",
+  "dependencies":
+  [
+      {
+          "name": "NMEA2000-library",
+          "authors": "Timo Lappalainen",
+          "url": "Kave Oy <www.kave.fi>",
+          "maintainer": true
+      }
+   ]
 }
-"dependencies":
-[
-    {
-        "name": "NMEA2000-library",
-        "authors": "Timo Lappalainen",
-        "url": "Kave Oy <www.kave.fi>",
-        "maintainer": true
-    }
- ]
