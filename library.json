@@ -1,0 +1,30 @@
+{
+  "name": "NMEA2000-Teensy",
+  "keywords": "nmea 2000, nmea, 2000, communication, bus, boat, marine",
+  "description": "A driver for the NMEA2000 Arduino library and the teensy 3.x boards",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/sarfata/NMEA2000_teensy.git"
+  },
+  "authors":
+  {
+    "name": "Thomas Sarlandie",
+    "email": "thomas@sarlandie.net",
+    "url": "http://www.sarfata.org",
+    "maintainer": true
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "Teensy",
+  "dependencies":
+  [
+      {
+          "name": "NMEA2000-library",
+          "authors": "Timo Lappalainen",
+          "url": "Kave Oy <www.kave.fi>",
+          "maintainer": true
+      }
+   ]
+}

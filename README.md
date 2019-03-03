@@ -35,8 +35,8 @@ You will need a CAN transceiver like the MCP2551 (for a list of other tested CAN
 | ----------------- | ------------------- | -------------- |
 |        TX         |         TxD         |                |
 |        RX         |         RxD         |                |
-|                   |        CANH         |      Blue      |
-|                   |        CANL         |     White      |
+|                   |        CANH         |     White      |
+|                   |        CANL         |     Blue       |
 |        Gnd        |         Gnd         |     Black      |
 | Vin (5v when usb) |         VDD         |                |
 |        Gnd        |         Rs          |                |
