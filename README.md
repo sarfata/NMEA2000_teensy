@@ -27,7 +27,7 @@ See the [NMEA2000](https://github.com/ttlappalainen/NMEA2000) for more examples.
 
 ## Hardware
 
-This driver only works with Teensy 3.1/3.2.
+This driver only works with Teensy 3.1/3.2/3.5/3.6.
 
 You will need a CAN transceiver like the MCP2551 (for a list of other tested CAN controllers, refer to the [FlexCAN library README](https://github.com/teachop/FlexCAN_Library).
 
@@ -46,7 +46,7 @@ You will need a CAN transceiver like the MCP2551 (for a list of other tested CAN
 
     The MIT License
 
-    Copyright (c) 2015-2017 Thomas Sarlandie thomas@sarlandie.net
+    Copyright (c) 2015-2019 Thomas Sarlandie thomas@sarlandie.net
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
